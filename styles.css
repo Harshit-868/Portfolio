@@ -1,0 +1,148 @@
+body {
+  margin: 0px;
+  text-align: center;
+  font-family: Verdana, "Geneva", Tahoma, sans-serif;
+  font-size: 1.25em;
+  background-color: #a1d8eb;
+  animation-name: anim1;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+h1 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-family: 'Damion', cursive
+}
+h1, h2 {color: black;}
+
+h2 {font-weight: normal;}
+
+h3 {
+  color: rgb(0, 140, 215);
+}
+
+#top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+#bottom-cloud {
+  position: absolute;
+  left: 250px;
+  top: 300px;
+}
+
+#top-container {
+  position: relative;
+  padding-top: 100px;
+  font-size: 2rem;
+}
+
+.mid-container {
+  position: relative;
+  background-color: #cfcfcf;
+  padding: 10px;
+  width: 10%;
+  height: 25%;
+  margin-left: 45%;
+  border-radius: 20px;
+  border: 5px solid #85cbe5;
+}
+.mid-container:hover {
+  transition-duration: 1s;
+  width: 75%;
+  height: 50%;
+  margin-left: 12.5%;
+}
+
+hr {
+  border-style: dotted none none;
+  border-color: #4169e1;
+  width: 75%;
+  border-width: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color:rgb(0, 140, 215);
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:20px;
+	padding:15px 30px;
+  text-decoration:none;
+  font-weight: bold;
+}
+.btn:hover {
+  transition-duration: 0.5s;
+  background-color: rgb(15, 150, 160);
+}
+
+.btn1 {
+  font-size: 15px;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+}
+
+#button {
+  /* display: none; */
+  background-color: rgb(255, 64, 30);
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+#clouds {
+  position: relative;
+  animation-name: anim2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#copyright {
+  padding: 20px 0px;
+}
+
+/* -------------------- Animations -------------------- */
+
+@keyframes anim1 {
+  25% {
+    background-color: #ffadad;
+  } 50% {
+    background-color: #aea8ff;
+  } 75% {
+    background-color: #76ff76;
+  } 100% {
+    background-color: #d2ff8f;
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    right: 0px;
+  } 10% {
+    right: 40px;
+  } 20% {
+    right: 80px;
+  } 30% {
+    right: 120px;
+  } 40% {
+    right: 160px;
+  } 50% {
+    right: 200px;
+  } 60% {
+    right: 240px;
+  } 70% {
+    right: 280px;
+  } 80% {
+    right: 320px;
+  } 90% {
+    right: 360px;
+  } 100% {
+    right: 400px;
+  }
+}
